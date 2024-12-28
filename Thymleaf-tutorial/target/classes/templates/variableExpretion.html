@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+		<title>Exmple for variable Expration</title>
+	</head>
+
+ <body>
+	<!--<h2>Variable Expration Demo</h2>
+	<p>Name: <strong th:text="${user.name}"></strong></p>
+	<p>Email:<strong th:text="${user.email}"></strong></p>
+	<p>Role: <strong th:text="${user.role}"></strong></p>
+	<p>Gender: <strong th:text="${user.gender}"></strong></p>		-->
+	
+	<h2>Selection Expration Demo</h2>
+	<div th:object="${user}">
+		<p>Name: <strong th:text="*{name}"></strong></p>
+		<p>Email:<strong th:text="*{email}"></strong></p>
+		<p>Role: <strong th:text="*{role}"></strong></p>
+		<p>Gender: <strong th:text="*{gender}"></strong></p>
+	</div>
+ </body>
+ 
+</html>

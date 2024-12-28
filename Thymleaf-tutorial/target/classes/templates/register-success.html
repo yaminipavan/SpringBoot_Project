@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>User Registerd Data</title>
+</head>
+
+<body>
+	<div align="center">
+		<h1>Registerd User Information</h1>
+		<div>
+			<p>name :<strong th:text="${userForm.name}"></strong></p>
+			<p>email :<strong th:text="${userForm.email}"></strong></p>
+			<p>password ;<strong th:text="${userForm.password}"></strong></p>
+			<p>gender :<strong th:text="${userForm.gender}"></strong></p>
+			<p>address :<strong th:text="${userForm.address}"></strong></p>
+			<p>married :<strong th:text="${userForm.married}"></strong></p>
+			<p>profession :<strong th:text="${userForm.profession}"></strong></p>
+		</div>
+	</div>
+</body>
+
+</html>

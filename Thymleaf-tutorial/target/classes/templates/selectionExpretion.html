@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Selection Expretion Demo</title>
+	</head>
+	<body>
+		<h1>Selection Expretion Demo</h1>
+		<h3>Student Details</h3>
+		<div th:object="${student}">
+			<p>StuId :<strong th:text="*{stuId}"></strong></p>
+			<p>StuName :<strong th:text="*{stuName}"></strong></p>
+			<p>StuMarks :<strong th:text="*{stuMarks}"></strong></p>
+			<p>StuGender :<strong th:text="*{stuGender}"></strong></p>
+		</div>
+	</body>
+</html>
